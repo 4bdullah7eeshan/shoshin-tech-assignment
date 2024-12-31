@@ -1,10 +1,10 @@
-function MenuItem() {
+function MenuItem({ icon, text }) {
     return (
         <>
             <li>
-                <a href="">
-                    <span>Icon</span>
-                    <span>Text</span>
+                <a href="#">
+                    <span>{icon}</span>
+                    <span>{text}</span>
                 </a>
             </li>
         </>
