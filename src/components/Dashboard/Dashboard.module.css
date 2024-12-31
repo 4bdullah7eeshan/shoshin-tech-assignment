@@ -34,3 +34,9 @@
 
 }
 
+.summaryCardsContainer {
+    display: flex;
+    gap: 1rem;
+    max-width: 640px;
+}
+

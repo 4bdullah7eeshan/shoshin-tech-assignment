@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../../public/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../../public/assets/fonts/Roboto/Roboto-Medium.ttf);
+}
+
+.summaryCard {
+    --color-text-primary: #000000;
+    --color-text-secondary: #686868;
+    --color-text-tertiary: #FF5151;
+
+    --font-poppins: Poppins, system-ui, sans-serif;
+    --font-roboto: Roboto, system-ui, sans-serif;
+
+    --font-weight-medium: 500;
+    --font-weight-light: 400;
+}
+
+.summaryCard {
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.textContainer,
+.graphContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer {
+    gap: 2rem;
+}
+
+.textContainer header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+}
+
+.textContainer header h4 {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-medium);
+    font-size: 1.125rem;
+    line-height: 1.75;
+    white-space: nowrap;
+}
+
+.textContainer header p {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-medium);
+    font-size: 3rem;
+    line-height: 0.6;
+}
+
+
+.textContainer footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.textContainer footer p {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-light);
+    color: var(--color-text-secondary);
+    font-size: 0.75rem;
+    line-height: 0.6;
+}
+
+
+.graphContainer {
+    gap: 1.25rem;
+}
+
+.graphContainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.graphContainer div small {
+    font-family: var(--font-roboto);
+    font-size: 0.625rem;
+    color: var(--color-text-tertiary);
+    font-weight: var(--font-weight-medium);
+}
+
+.graphContainer p {
+    border-radius: 4px;
+    background-color: #FFEFE7;
+    padding: 10px;
+
+}
+
+.graphContainer p small {
+    color: #303030;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-light);
+    font-size: 0.75rem;
+}

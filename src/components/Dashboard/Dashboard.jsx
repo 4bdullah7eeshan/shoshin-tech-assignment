@@ -25,7 +25,7 @@ function Dashboard() {
                         
                     </div>
 
-                    <div className={styles.SummaryCardsContainer}>
+                    <div className={styles.summaryCardsContainer}>
                         {summaryCards.map((data, index) => (
                             <SummaryCard
                                 key={index}

@@ -6,11 +6,11 @@ import styles from "./SummaryCard.module.css";
 
 function SummaryCard({ title, menCount, womenCount, isIncrease, percentage }) {
     return(
-        <article>
-            <section>
+        <article className={styles.summaryCard}>
+            <section className={styles.textContainer}>
                 <header>
                     <h4>{title}</h4>
-                    <p>{menCount + womenCount}</p>
+                    <p>{parseInt(menCount, 10) + parseInt(womenCount, 10)}</p>
                 </header>
 
                 <footer>
@@ -18,14 +18,13 @@ function SummaryCard({ title, menCount, womenCount, isIncrease, percentage }) {
                     <p><small>{`${womenCount} Women`}</small></p>
                 </footer>
             </section>
-            <section>
+            <section className={styles.graphContainer}>
                 <div>
                     <small>
                         {isIncrease ? '+' : '-'}{percentage}%
                     </small>
                     <img src={upArrow} alt="" />
                     <img src={graph} alt="" />
-                    <img src={graphGradient} alt="" />
                 </div>
 
                 <p>
