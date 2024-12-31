@@ -6,11 +6,11 @@ import departmentIcon from "../../../public/assets/department-icon.svg";
 
 
 const mainMenuItems = [
-    { icon: {dashboardIcon}, text: "Dashboard" },
-    { icon: {recruitmentIcon}, text: "Recruitment" },
-    { icon: {scheduleIcon}, text: "Schedule" },
-    { icon: {employeeIcon}, text: "Employee" },
-    { icon: {departmentIcon}, text: "Department" },
+    { icon: dashboardIcon, text: "Dashboard" },
+    { icon: recruitmentIcon, text: "Recruitment" },
+    { icon: scheduleIcon, text: "Schedule" },
+    { icon: employeeIcon, text: "Employee" },
+    { icon: departmentIcon, text: "Department" },
 ];
 
 export default mainMenuItems;
