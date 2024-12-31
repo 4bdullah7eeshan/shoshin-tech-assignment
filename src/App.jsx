@@ -1,9 +1,9 @@
-import Logo from "./components/Logo/Logo"
+import Wordmark from "./components/Wordmark/Wordmark"
 function App() {
 
   return (
     <>
-      <Logo />
+      <Wordmark />
       
     </>
   )
