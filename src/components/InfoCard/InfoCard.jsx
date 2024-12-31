@@ -13,11 +13,13 @@ function InfoCard({ title, info, description }) {
         }
     };
 
+    const { bgColor, descColor } = getCardStyles();
+
     return (
-        <article className={styles.infoCard}>
-            <p></p>
-            <p></p>
-            <p></p>
+        <article className={styles.infoCard} style={{ backgroundColor: bgColor }}>
+            <p>{title}</p>
+            <p>{info}</p>
+            <p style={{ color: descColor }}>{description}</p>
         </article>
     );
 }
