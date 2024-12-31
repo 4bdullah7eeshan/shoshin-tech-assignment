@@ -1,3 +1,17 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../../public/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+.userProfile {
+    --color-border: #E0E0E0;
+    --color-text: #B3B3B3;
+
+    --font-poppins: Poppins, system-ui, sans-serif;
+
+    --font-weight-medium: 500;
+}
+
 .userProfile {
     display: flex;
     align-items: center;
@@ -8,4 +22,10 @@
     width: 42px;
     height: 42px;
     border-radius: 50%;
+}
+
+.userName {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-medium);
+    font-size: 1rem;
 }
