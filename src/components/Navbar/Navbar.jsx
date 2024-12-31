@@ -4,8 +4,8 @@ import styles from "./Navbar.module.css";
 
 function Navbar() {
     return (
-        <nav className="navbar">
-            <div className="navItemsContainer">
+        <nav className={styles.navbar}>
+            <div className={styles.navItemsContainer}>
                 <SearchBar />
                 <UserProfileMenu />
             </div>
