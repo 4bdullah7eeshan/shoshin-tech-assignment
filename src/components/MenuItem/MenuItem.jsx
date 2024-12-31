@@ -3,7 +3,7 @@ function MenuItem({ icon, text }) {
         <>
             <li>
                 <a href="#">
-                    <span>{icon}</span>
+                    <img src={icon}/>
                     <span>{text}</span>
                 </a>
             </li>
