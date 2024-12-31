@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../../public/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../../public/assets/fonts/Roboto/Roboto-Light.ttf);
+}
+
+.recentActivityCard {
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #686868;
+    --color-text-tertiary: #FF5151;
+
+    --font-poppins: Poppins, system-ui, sans-serif;
+    --font-roboto: Roboto, system-ui, sans-serif;
+
+    --font-weight-medium: 500;
+    --font-weight-light: 400;
+}
+
+.recentActivityCard {
+    background-color: #161E54;
+    border-radius: 10px;
+}
+
+.recentActivityCard header {
+    padding-top: 10px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.recentActivityCard header h3 {
+    color: var(--color-text-primary);
+    font-family: var(--font-poppins);
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.recentActivityCard section {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.recentActivityDate {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-medium);
+    font-size: 0.625rem;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+}
+
+
+.recentActivityTitle {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-medium);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+}
+
+.recentActivityDetail {
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-light);
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: var(--color-text-primary);
+}
+
+.recentActivityCard footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 369px;
+}
+
+.recentActivityCard footer p {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-light);
+    font-size: 0.875;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+}
+
+
+.recentActivityCard footer button {
+    background-color: #FF5151;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-medium);
+    font-size: 0.875;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-text-primary);
+}
