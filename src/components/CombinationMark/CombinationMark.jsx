@@ -1,6 +1,6 @@
 import Logo from "../Logo/Logo";
 import Wordmark from "../Wordmark/Wordmark";
-import { styles } from "./CombinationMark.module.css";
+import styles from "./CombinationMark.module.css";
 
 function CombinationMark() {
     return (
