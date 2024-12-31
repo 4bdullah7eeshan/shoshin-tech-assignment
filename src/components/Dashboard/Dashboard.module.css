@@ -1,4 +1,23 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../../public/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+.dashboard {
+    --font-poppins: Poppins, system-ui, sans-serif;
+
+    --font-weight-medium: 500;
+}
+
 .dashboard {
     display: flex;
     padding-left: 3.125rem;
 }
+
+.dashboardHeaderText {
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.75;
+}
+

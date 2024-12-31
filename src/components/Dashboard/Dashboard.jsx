@@ -4,7 +4,7 @@ function Dashboard() {
     return(
         <main className={styles.dashboard}>
             <header>
-                <h1>Dashboard</h1>
+                <h1 className={styles.dashboardHeaderText}>Dashboard</h1>
             </header>
             <div>
                 <div>
@@ -39,7 +39,7 @@ function Dashboard() {
 
                     </div>
                     <div>
-                        
+
                     </div>
 
                 </div>
