@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../../public/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+.menuItemContainer {
+    --color-text-primary: ;
+    --color-text-secondary: #FF5151;
+
+    --font-poppins: Poppins, system-ui, sans-serif;
+
+    --font-weight-medium: 500;
+}
+
+.menuItemContainer {
+    list-style: none;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    text-decoration: none;
+
+}
+
+
+
+.menuItemText {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    font-family: var(--font-poppins);
+}
