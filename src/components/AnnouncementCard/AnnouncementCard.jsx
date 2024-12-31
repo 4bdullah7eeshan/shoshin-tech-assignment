@@ -1,6 +1,6 @@
 import dropdownArrow from "../../../public/assets/dropdown-arrow.svg";
 import announcements from "../../utils/data/announcements";
-import styles from "./AnnoucementCard.module.css";
+import styles from "./AnnouncementCard.module.css";
 import pinIcon from "../../../public/assets/pin.svg";
 import threeDotsIcon from "../../../public/assets/three-dots.svg";
 
@@ -8,7 +8,7 @@ function AnnouncementCard() {
     const recentAnnouncements = announcements.slice(0, 3);
 
     return (
-        <article>
+        <article className={styles.announcementCard}>
             <header>
                 <h3>Announcement</h3>
                 <button>
@@ -16,14 +16,14 @@ function AnnouncementCard() {
                     <img src={dropdownArrow} alt="" />
                 </button>
             </header>
-            <ul>
+            <ul className={styles.announcementsList}>
                 {recentAnnouncements.map((announcement, index) => (
                     <li key={index}>
-                        <div>
-                            <h2>{announcement.title}</h2>
+                        <div className={styles.announcementText}>
+                            <h4>{announcement.title}</h4>
                             <p>{announcement.time}</p>
                         </div>
-                        <div>
+                        <div className={styles.announcementManageIcons}>
                             <img src={pinIcon} alt="" />
                             <img src={threeDotsIcon} alt="" />
                         </div>

@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../../public/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../../public/assets/fonts/Roboto/Poppins-Light.ttf);
+}
+
+.announcementCard {
+    --color-font-secondary: #686868;
+
+    --font-poppins: Poppins, system-ui, sans-serif;
+    --font-roboto: Roboto, system-ui, sans-serif;
+
+    --font-weight-medium: 500;
+    --font-weight-light: 400;
+
+}
+
+.announcementCard {
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--font-poppins);
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.announcementCard header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.announcementCard header h3 {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+}
+
+.announcementCard header button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EFEFEF;
+    padding: 6px;
+    border-radius: 4px;
+    gap: 1rem;
+}
+
+.announcementCard header button p {
+    font-family: var(--font-roboto);
+    color: var(--color-font-secondary);
+    font-weight: var(--font-weight-light);
+    font-size: 0.75rem;
+}
+
+.announcementsList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+
+    
+}
+
+.announcementsList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border: 0.5px solid #E0E0E0;
+    border-radius: 6px;
+    width: 600px;
+}
+
+.announcementText {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.announcementText h4 {
+    font-size: 1rem;
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-light);
+}
+
+
+.announcementText p {
+    font-size: 0.625rem;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-light);
+}
+
+.announcementManageIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}

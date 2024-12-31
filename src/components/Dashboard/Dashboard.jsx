@@ -1,5 +1,6 @@
 import InfoCard from "../InfoCard/InfoCard";
 import SummaryCard from "../SummaryCard/SummaryCard";
+import AnnouncementCard from "../AnnouncementCard/AnnouncementCard";
 import infoCards from "../../utils/data/infoCards";
 import summaryCards from "../../utils/data/summaryCards";
 import styles from "./Dashboard.module.css";
@@ -39,9 +40,7 @@ function Dashboard() {
                         
                     </div>
 
-                    <div>
-
-                    </div>
+                    <AnnouncementCard />
 
                 </div>
                 <div>
