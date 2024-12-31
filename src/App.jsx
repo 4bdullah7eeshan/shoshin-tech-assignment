@@ -1,9 +1,9 @@
-import Wordmark from "./components/Wordmark/Wordmark"
+import CombinationMark from "./components/CombinationMark/CombinationMark"
 function App() {
 
   return (
     <>
-      <Wordmark />
+      <CombinationMark />
       
     </>
   )
