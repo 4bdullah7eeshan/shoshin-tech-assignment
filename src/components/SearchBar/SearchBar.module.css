@@ -1,5 +1,15 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../../public/assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
 .searchBar {
     --color-border: #E0E0E0;
+    --color-text: #B3B3B3;
+
+    --font-poppins: Poppins, system-ui, sans-serif;
+
+    --font-weight-light: 400;
 }
 
 .searchBar {
@@ -10,4 +20,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.searchInput {
+    outline: none;
+    color: var(--color-text);
+    font-family: var(--font-poppins);
+    font-size: 1rem;
 }
