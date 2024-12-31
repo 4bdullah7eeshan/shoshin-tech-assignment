@@ -1,8 +1,11 @@
+import CombinationMark from "../CombinationMark/CombinationMark";
+import Menus from "../Menus/Menus";
+
 function Sidebar() {
     return (
         <aside>
-            {/* Logo */}
-            {/* Menu */}
+            <CombinationMark />
+            <Menus />
         </aside>
     )
 }
