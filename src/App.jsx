@@ -3,13 +3,12 @@ import Main from "./components/Main/Main";
 import "./App.css";
 
 function App() {
-
   return (
     <div id="home">
       <Sidebar />
-      <Main />      
+      <Main />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
