@@ -10,6 +10,8 @@ function InfoCard({ title, info, description }) {
             return { bgColor: "#E8F0FB", descColor: "#3786F1" };
           case "New Employees":
             return { bgColor: "#FDEBF9", descColor: "#EE61CF" };
+          default:
+            return { bgColor: "#FFFFFF", descColor: "#000000" };
         }
     };
 
