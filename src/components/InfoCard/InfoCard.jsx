@@ -19,9 +19,9 @@ function InfoCard({ title, info, description }) {
 
     return (
         <article className={styles.infoCard} style={{ backgroundColor: bgColor }}>
-            <h4>{title}</h4>
-            <p>{info}</p>
-            <p style={{ color: descColor }}><small>{description}</small></p>
+            <h4 className={styles.title}>{title}</h4>
+            <p className={styles.info}>{info}</p>
+            <p style={{ color: descColor }} className={styles.description}><small>{description}</small></p>
         </article>
     );
 }
