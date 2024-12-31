@@ -1,4 +1,7 @@
+import InfoCard from "../InfoCard/InfoCard";
+import infoCards from "../../utils/data/infoCards";
 import styles from "./Dashboard.module.css";
+
 
 function Dashboard() {
     return(
@@ -8,22 +11,16 @@ function Dashboard() {
             </header>
             <div className={styles.cardsContainer}>
                 <div>
-                    <div>
-                        <div>
-                            <div>Available Position</div>
-                            <div>24</div>
-                            <div>4 Urgently needed</div>
-                        </div>
-                        <div>
-                            <div>Available Position</div>
-                            <div>24</div>
-                            <div>4 Urgently needed</div>
-                        </div>
-                        <div>
-                            <div>Available Position</div>
-                            <div>24</div>
-                            <div>4 Urgently needed</div>
-                        </div>
+                    <div className={styles.infoCardsContainer}>
+                        {infoCards.map((data, index) => (
+                            <InfoCard
+                                key={index}
+                                title={data.title}
+                                info={data.info}
+                                description={data.description}
+                            />
+                    ))}
+                        
                     </div>
 
                     <div>
@@ -58,7 +55,7 @@ function Dashboard() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div>
 
 

@@ -11,6 +11,7 @@
 
 .dashboard {
     display: flex;
+    flex-direction: column;
     padding-left: 3.125rem;
 }
 
@@ -19,5 +20,17 @@
     font-size: 1.5rem;
     font-weight: var(--font-weight-medium);
     line-height: 1.75;
+}
+
+.cardsContainer {
+    display: flex;
+
+}
+
+.infoCardsContainer {
+    display: flex;
+    gap: 1rem;
+    max-width: 640px;
+
 }
 
