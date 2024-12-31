@@ -1,5 +1,7 @@
 import InfoCard from "../InfoCard/InfoCard";
+import SummaryCard from "../SummaryCard/SummaryCard";
 import infoCards from "../../utils/data/infoCards";
+import summaryCards from "../../utils/data/summaryCards";
 import styles from "./Dashboard.module.css";
 
 
@@ -23,43 +25,18 @@ function Dashboard() {
                         
                     </div>
 
-                    <div>
-                        <div>
-                            <div>
-                                <div>
-                                    <div>
-                                        Total Employees
-                                    </div>
-                                    <div>
-                                        216
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div>
-                                        120 Men
-                                    </div>
-                                    <div>
-                                        96 Women
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    {/* 4 things */}
-                                </div>
-                                <div>
-                                    <div>
-                                        +2% Past month
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-
-
-                        </div>
+                    <div className={styles.SummaryCardsContainer}>
+                        {summaryCards.map((data, index) => (
+                            <SummaryCard
+                                key={index}
+                                title={data.title}
+                                menCount={data.menCount}
+                                womenCount={data.womenCount}
+                                isIncrease={data.isIncrease}
+                                percentage={data.percentage}
+                            />
+                        ))}
+                        
                     </div>
 
                     <div>
