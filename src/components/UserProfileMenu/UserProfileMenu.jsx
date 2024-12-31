@@ -9,7 +9,7 @@ function UserProfileMenu() {
         <header className={styles.userProfileMenu}>
             <NotificationBell />
             <MessageIcon />
-            <UserProfile userAvatar={user.userAvatar} userName={user.userName} />
+            <UserProfile userAvatar={user.avatar} userName={user.name} />
         </header>
     )
 }
