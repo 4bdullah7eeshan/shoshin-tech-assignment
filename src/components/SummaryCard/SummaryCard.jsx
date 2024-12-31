@@ -4,13 +4,13 @@ import graphGradient from "../../../public/assets/graph-gradient.svg";
 
 import styles from "./SummaryCard.module.css";
 
-function SummaryCard({ title, info, menCount, womenCount, isIncrease, increasePercentage }) {
+function SummaryCard({ title, menCount, womenCount, isIncrease, percentage }) {
     return(
         <article>
             <section>
                 <header>
                     <h4>{title}</h4>
-                    <p>{info}</p>
+                    <p>{menCount + womenCount}</p>
                 </header>
 
                 <footer>
@@ -21,7 +21,7 @@ function SummaryCard({ title, info, menCount, womenCount, isIncrease, increasePe
             <section>
                 <div>
                     <small>
-                        {isIncrease ? '+' : '-'}{increasePercentage}%
+                        {isIncrease ? '+' : '-'}{percentage}%
                     </small>
                     <img src={upArrow} alt="" />
                     <img src={graph} alt="" />
@@ -29,7 +29,7 @@ function SummaryCard({ title, info, menCount, womenCount, isIncrease, increasePe
                 </div>
 
                 <p>
-                    <small>{isIncrease ? '+' : '-'}{increasePercentage}% Past month</small>
+                    <small>{isIncrease ? '+' : '-'}{percentage}% Past month</small>
                 </p>
             </section>
         </article>
