@@ -20,13 +20,19 @@
 }
 
 .infoCard {
-    width: 204px;
-    height: 136px;
     border-radius: 10px;
     padding: 12px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    flex-wrap: wrap;
+
+    flex: 1 1 auto; /* Allow equal distribution of space */
+    max-width: 200px; /* Define a consistent max width */
+    min-width: 200px; /* Prevent shrinking */
+    padding: 1rem;
+    box-sizing: border-box;
+
 }
 
 .title,

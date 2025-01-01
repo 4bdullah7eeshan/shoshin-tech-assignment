@@ -24,6 +24,8 @@
     padding-bottom: 1rem;
     padding-left: 2rem;
     text-decoration: none;
+    flex-wrap: wrap;
+
 
 }
 

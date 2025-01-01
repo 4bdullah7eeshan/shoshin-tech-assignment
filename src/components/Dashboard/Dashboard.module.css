@@ -13,6 +13,8 @@
     display: flex;
     flex-direction: column;
     padding-left: 3.125rem;
+    flex-wrap: wrap;
+
 }
 
 .dashboardHeaderText {
@@ -23,20 +25,70 @@
 }
 
 .cardsContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr; /* Two-column layout for desktop */
+    gap: 2rem;
+
+}
+
+/* .infoCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+ */ 
+
+.summaryCardsContainer {
+    /* display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 
 }
 
 .infoCardsContainer {
+    display: flex; /* Ensure items are aligned horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 1rem; /* Maintain spacing between cards */
+    justify-content: space-between; /* Space out cards */
+  }
+  
+  .infoCardsContainer .card {
+    flex: 1 1 auto; /* Allow equal distribution of space */
+    max-width: 200px; /* Define a consistent max width */
+    min-width: 200px; /* Prevent shrinking */
+    padding: 1rem;
+    box-sizing: border-box; /* Include padding in the size */
+  }
+
+
+.two {
     display: flex;
-    gap: 1rem;
-    max-width: 640px;
+    flex-direction: column;
 
 }
 
-.summaryCardsContainer {
+.three {
     display: flex;
-    gap: 1rem;
-    max-width: 640px;
+    flex-direction: column;
+    gap: 2rem;
 }
 
+@media (max-width: 1024px) {
+    .cardsContainer {
+      grid-template-columns: 1fr; /* Single column layout for tablets */
+    }
+  
+    .three {
+      display: flex;
+      flex-direction: row;
+
+
+    }
+  
+   
+  }
+  
+  

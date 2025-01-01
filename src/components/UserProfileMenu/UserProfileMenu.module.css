@@ -2,4 +2,6 @@
     display: flex;
     padding: 1.5rem 3.125rem;
     gap: 1.875rem;
+    flex-wrap: wrap;
+
 }

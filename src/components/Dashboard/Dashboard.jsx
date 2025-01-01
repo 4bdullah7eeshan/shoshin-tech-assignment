@@ -15,7 +15,7 @@ function Dashboard() {
                 <h1 className={styles.dashboardHeaderText}>Dashboard</h1>
             </header>
             <div className={styles.cardsContainer}>
-                <div>
+                <div className={styles.two}>
                     <div className={styles.infoCardsContainer}>
                         {infoCards.map((data, index) => (
                             <InfoCard
@@ -45,7 +45,7 @@ function Dashboard() {
                     <AnnouncementCard />
 
                 </div>
-                <div>
+                <div className={styles.three}>
                     <RecentActivityCard />
                     <UpcomingScheduleCard />
                 </div>

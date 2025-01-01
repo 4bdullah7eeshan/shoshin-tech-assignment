@@ -1,5 +1,8 @@
 #home {
   display: flex;
   height: 100vh;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
 }
-
