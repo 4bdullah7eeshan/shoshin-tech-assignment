@@ -25,13 +25,7 @@
     padding-left: 2rem;
     text-decoration: none;
     flex-wrap: wrap;
-
-
 }
-
-
-
-
 
 .menuItemText {
     color: var(--color-text-primary);

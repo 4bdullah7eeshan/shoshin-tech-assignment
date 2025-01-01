@@ -1,13 +1,20 @@
-import searchIcon from "../../../public/assets/search-icon.svg"
+import searchIcon from "../../../public/assets/search-icon.svg";
 import styles from "./SearchBar.module.css";
 
 function SearchBar() {
-    return (
-        <div className={styles.searchBar}>
-            <input type="text" placeholder="Search" className={styles.searchInput} />
-            <img src={searchIcon} alt="" />
-        </div>
-    )
+  return (
+    <div className={styles.searchBar}>
+      <input
+        type="text"
+        placeholder="Search"
+        className={styles.searchInput}
+      />
+      <img
+        src={searchIcon}
+        alt=""
+      />
+    </div>
+  );
 }
 
 export default SearchBar;

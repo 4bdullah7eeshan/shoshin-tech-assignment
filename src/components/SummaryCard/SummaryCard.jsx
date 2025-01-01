@@ -6,42 +6,56 @@ import graph from "../../../public/assets/graph.svg";
 import styles from "./SummaryCard.module.css";
 
 function SummaryCard({ title, menCount, womenCount, isIncrease, percentage }) {
-    return(
-        <article className={styles.summaryCard}>
-            <section className={styles.textContainer}>
-                <header>
-                    <h4>{title}</h4>
-                    <p>{parseInt(menCount, 10) + parseInt(womenCount, 10)}</p>
-                </header>
+  return (
+    <article className={styles.summaryCard}>
+      <section className={styles.textContainer}>
+        <header>
+          <h4>{title}</h4>
+          <p>{parseInt(menCount, 10) + parseInt(womenCount, 10)}</p>
+        </header>
 
-                <footer>
-                    <p><small>{`${menCount} Men`}</small></p>
-                    <p><small>{`${womenCount} Women`}</small></p>
-                </footer>
-            </section>
-            <section className={styles.graphContainer}>
-                <div>
-                    <small>
-                        {isIncrease ? '+' : '-'}{percentage}%
-                    </small>
-                    <img src={upArrow} alt="" />
-                    <img src={graph} alt="" />
-                </div>
+        <footer>
+          <p>
+            <small>{`${menCount} Men`}</small>
+          </p>
+          <p>
+            <small>{`${womenCount} Women`}</small>
+          </p>
+        </footer>
+      </section>
+      <section className={styles.graphContainer}>
+        <div>
+          <small>
+            {isIncrease ? "+" : "-"}
+            {percentage}%
+          </small>
+          <img
+            src={upArrow}
+            alt=""
+          />
+          <img
+            src={graph}
+            alt=""
+          />
+        </div>
 
-                <p>
-                    <small>{isIncrease ? '+' : '-'}{percentage}% Past month</small>
-                </p>
-            </section>
-        </article>
-    )
+        <p>
+          <small>
+            {isIncrease ? "+" : "-"}
+            {percentage}% Past month
+          </small>
+        </p>
+      </section>
+    </article>
+  );
 }
 
 SummaryCard.propTypes = {
-    title: PropTypes.string,
-    menCount: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    womenCount: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    isIncrease: PropTypes.bool,
-    percentage: PropTypes.number,
+  title: PropTypes.string,
+  menCount: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  womenCount: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  isIncrease: PropTypes.bool,
+  percentage: PropTypes.number,
 };
 
 export default SummaryCard;

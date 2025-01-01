@@ -16,7 +16,6 @@
 
     --font-weight-medium: 500;
     --font-weight-light: 400;
-
 }
 
 .announcementCard {
@@ -35,7 +34,6 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .announcementCard header h3 {
@@ -53,7 +51,6 @@
     border-radius: 4px;
     gap: 1rem;
     flex-wrap: wrap;
-
 }
 
 .announcementCard header button p {
@@ -67,11 +64,8 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1rem; 
+    gap: 1rem;
     flex-wrap: nowrap;
-
-
-    
 }
 
 .announcementsList li {
@@ -82,7 +76,6 @@
     border: 0.5px solid #E0E0E0;
     border-radius: 6px;
     flex-wrap: nowrap;
-
 }
 
 .announcementText {
@@ -91,16 +84,14 @@
     gap: 6px;
     flex-wrap: wrap;
     flex-grow: 1;
-
 }
 
 .announcementText h4 {
     font-size: 1rem;
     font-family: var(--font-poppins);
     font-weight: var(--font-weight-light);
-    
-    word-wrap: break-word; /* Allow long text to wrap */
-    white-space: normal; /* Ensure text wraps on overflow */
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 
@@ -115,8 +106,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    
     flex-wrap: wrap;
     flex-shrink: 0;
-
 }

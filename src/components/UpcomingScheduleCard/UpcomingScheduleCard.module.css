@@ -70,7 +70,7 @@
     flex-wrap: nowrap;
 
 
-    
+
 }
 
 .tag {
@@ -104,8 +104,10 @@
     font-size: 1rem;
     font-family: var(--font-poppins);
     font-weight: var(--font-weight-light);
-    word-wrap: break-word; /* Allow long text to wrap */
-    white-space: normal; /* Ensure text wraps on overflow */
+    word-wrap: break-word;
+    /* Allow long text to wrap */
+    white-space: normal;
+    /* Ensure text wraps on overflow */
 }
 
 

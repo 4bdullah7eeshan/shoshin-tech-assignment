@@ -1,10 +1,10 @@
 const summaryCards = [
     {
-      title: "Total Employees",
-      menCount: "120",
-      womenCount: "96",
-      isIncrease: true,
-      percentage: "2",
+        title: "Total Employees",
+        menCount: "120",
+        womenCount: "96",
+        isIncrease: true,
+        percentage: "2",
     },
     {
         title: "Talent Request",
@@ -12,8 +12,7 @@ const summaryCards = [
         womenCount: "10",
         isIncrease: true,
         percentage: "5",
-      },
-  ];
-  
-  export default summaryCards;
-  
+    },
+];
+
+export default summaryCards;
