@@ -29,10 +29,7 @@
 
 }
 
-.selected {
-    color: var(--color-text-secondary);
-    font-weight: var(--font-weight-medium);
-}
+
 
 
 
@@ -40,6 +37,11 @@
     color: var(--color-text-primary);
     font-size: 1rem;
     font-family: var(--font-poppins);
+}
+
+.selected {
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
 }
 
 @media screen and (max-width: 1200px) {

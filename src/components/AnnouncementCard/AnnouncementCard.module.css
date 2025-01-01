@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem; 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
 
     
@@ -81,7 +81,7 @@
     padding: 0.75rem 1rem;
     border: 0.5px solid #E0E0E0;
     border-radius: 6px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
 }
 
@@ -90,6 +90,7 @@
     flex-direction: column;
     gap: 6px;
     flex-wrap: wrap;
+    flex-grow: 1;
 
 }
 
@@ -97,6 +98,9 @@
     font-size: 1rem;
     font-family: var(--font-poppins);
     font-weight: var(--font-weight-light);
+    
+    word-wrap: break-word; /* Allow long text to wrap */
+    white-space: normal; /* Ensure text wraps on overflow */
 }
 
 
@@ -111,6 +115,8 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
+    
     flex-wrap: wrap;
+    flex-shrink: 0;
 
 }

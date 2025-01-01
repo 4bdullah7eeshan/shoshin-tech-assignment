@@ -7,7 +7,8 @@ import upcomingSchedule from "../../utils/data/upcomingSchedule";
 
 function UpcomingScheduleCard() {
     
-    const recentAnnouncements = upcomingSchedule.slice(0, 3);
+    const priorityAnnouncements = upcomingSchedule.filter(announcement => announcement.tag === "Priority");
+    const otherAnnouncements = upcomingSchedule.filter(announcement => announcement.tag === "Other");
 
     return (
         <article className={styles.announcementCard}>
@@ -18,18 +19,33 @@ function UpcomingScheduleCard() {
                     <img src={dropdownArrow} alt="" />
                 </button>
             </header>
-            <p>Priority</p>
+            <p className={styles.tag}>Priority</p>
             <ul className={styles.announcementsList}>
-                {recentAnnouncements.map((announcement, index) => (
-                    <li key={index}>
+                {priorityAnnouncements.map((announcement, index) => (
+                    <li key={index} className={styles.announcementItem}>
                         <div className={styles.announcementText}>
                             <h4>{announcement.title}</h4>
                             <p>{announcement.time}</p>
                         </div>
                         <div className={styles.announcementManageIcons}>
-                            <img src={threeDotsIcon} alt="" />
+                            <img src={threeDotsIcon} alt="Manage" />
                         </div>
+                    </li>
+                ))}
+            </ul>
 
+            {/* Render Other Announcements */}
+            <p className={styles.tag}>Other</p>
+            <ul className={styles.announcementsList}>
+                {otherAnnouncements.map((announcement, index) => (
+                    <li key={index} className={styles.announcementItem}>
+                        <div className={styles.announcementText}>
+                            <h4>{announcement.title}</h4>
+                            <p>{announcement.time}</p>
+                        </div>
+                        <div className={styles.announcementManageIcons}>
+                            <img src={threeDotsIcon} alt="Manage" />
+                        </div>
                     </li>
                 ))}
             </ul>
