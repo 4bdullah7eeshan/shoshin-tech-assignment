@@ -3,8 +3,16 @@
     flex-direction: column;
     gap: 2.5rem;
     min-height: 100vh;
-    padding: 20px 0 272px 0;
+    padding: 1rem;
+    padding-right: 2rem;
     background-color: #FAFAFA;
     flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        padding: 20px;
+    }
 
 }

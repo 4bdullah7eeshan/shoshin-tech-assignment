@@ -25,9 +25,17 @@
     border: 1px solid #E0E0E0;
     padding: 1.25rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 0.75rem;
+    flex-wrap: nowrap;
+
+
+    flex: 1; 
+
+    padding: 1rem;
+    box-sizing: border-box; 
+    flex-shrink: 1;
 
     
 }

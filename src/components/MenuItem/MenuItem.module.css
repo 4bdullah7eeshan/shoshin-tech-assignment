@@ -4,7 +4,7 @@
 }
 
 .menuItemContainer {
-    --color-text-primary: ;
+    --color-text-primary: #686868;
     --color-text-secondary: #FF5151;
 
     --font-poppins: Poppins, system-ui, sans-serif;
@@ -29,10 +29,27 @@
 
 }
 
+.selected {
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+}
+
 
 
 .menuItemText {
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
     font-size: 1rem;
     font-family: var(--font-poppins);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .menuItemText {
+        display: none;
+    }
+
+    .menuItem img {
+        width: 24px;
+        height: 24px;
+    }
 }
