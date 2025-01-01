@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from "./MenuItem.module.css";
 
 function MenuItem({ icon, text, isSelected }) {
@@ -23,5 +24,11 @@ function MenuItem({ icon, text, isSelected }) {
 
     )
 }
+
+MenuItem.propTypes = {
+    icon: PropTypes.string,
+    text: PropTypes.string,
+    isSelected: PropTypes.bool,
+};
 
 export default MenuItem;

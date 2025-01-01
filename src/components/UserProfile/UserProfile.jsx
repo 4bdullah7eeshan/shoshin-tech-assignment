@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import dropdownArrow from "../../../public/assets/dropdown-arrow.svg";
 import styles from "./UserProfile.module.css";
 
@@ -9,7 +10,7 @@ function UserProfile({ userAvatar, userName }) {
                 src={userAvatar} 
                 alt={`${userName}'s profile picture`} 
             />
-            
+
             <span className={styles.userName}>
                 {userName}
             </span>
@@ -20,5 +21,10 @@ function UserProfile({ userAvatar, userName }) {
         </div>
     );
 }
+
+UserProfile.propTypes = {
+    userAvatar: PropTypes.string,
+    userName: PropTypes.string,
+};
 
 export default UserProfile;

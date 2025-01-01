@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from "./InfoCard.module.css";
 
 function InfoCard({ title, info, description }) {
@@ -25,5 +26,11 @@ function InfoCard({ title, info, description }) {
         </article>
     );
 }
+
+InfoCard.propTypes = {
+    title: PropTypes.string,
+    info: PropTypes.string,
+    description: PropTypes.string,
+};
 
 export default InfoCard;

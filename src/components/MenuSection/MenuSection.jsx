@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import MenuItem from "../MenuItem/MenuItem";
 import styles from "./MenuSection.module.css";
 
@@ -18,6 +19,16 @@ const MenuSection = ({ title, items }) => {
             </ul>
         </section>
     );
+};
+
+MenuSection.propTypes = {
+    title: PropTypes.string,
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            icon: PropTypes.string,
+            text: PropTypes.string,
+        })
+    ).isRequired,
 };
 
 export default MenuSection;

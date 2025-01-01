@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import upArrow from "../../../public/assets/up-arrow.svg";
 import graph from "../../../public/assets/graph.svg";
-import graphGradient from "../../../public/assets/graph-gradient.svg";
+// import graphGradient from "../../../public/assets/graph-gradient.svg";
 
 import styles from "./SummaryCard.module.css";
 
@@ -34,5 +35,13 @@ function SummaryCard({ title, menCount, womenCount, isIncrease, percentage }) {
         </article>
     )
 }
+
+SummaryCard.propTypes = {
+    title: PropTypes.string,
+    menCount: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    womenCount: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    isIncrease: PropTypes.bool,
+    percentage: PropTypes.number,
+};
 
 export default SummaryCard;
